@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тетрис - онлайн игра</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>	
+	<div id="site">		
+		<div id="wrap-game">
+			<table id="game" border="1px">
+				
+			</table>
+		</div>
+		<div id="menu">
+			<div id="control">
+				<div id="picture"></div>
+				<span>Lines:
+					<span id="lines">1000</span>
+				</span>				
+				<span>Level:
+					<span id="level">111</span>
+				</span>				
+				<button id="bstart" class="start but"> START</button>
+				<button id="bleft" class="but"> 
+					<img src="image/left1.png" width="40px" height="auto"> 
+				</button>
+				<button id="bright" class="but"> 
+					<img src="image/right1.png" width="40px" height="auto"> 
+				</button>
+				<button id="bdown" class="but"> 
+					<img src="image/down.png" width="40px" height="auto"> 
+				</button>
+				<button id="brotate" class="but"> 
+					<img src="image/rotate.png" width="40px" height="auto"> 
+				</button>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="script/function.js"></script>
+	<script type="text/javascript" src="script/Cell.js"></script>
+	<script type="text/javascript" src="script/Figure.js"></script>
+	<script type="text/javascript" src="script/figures/Lever.js"></script>
+	<script type="text/javascript" src="script/figures/Hook.js"></script>
+	<script type="text/javascript" src="script/figures/Crown.js"></script>
+	<script type="text/javascript" src="script/figures/Square.js"></script>
+	<script type="text/javascript" src="script/figures/Line.js"></script>
+	<script type="text/javascript" src="script/figures/Lightning.js"></script>
+	<script type="text/javascript" src="script/figures/Zigzag.js"></script>
+	<script type="text/javascript" src="script/Field.js"></script>
+	<script type="text/javascript" src="script/Game.js"></script>
+</body>
+</html>
