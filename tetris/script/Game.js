@@ -53,8 +53,7 @@
 	field.createFigure(current[0],current[1]);
 	$("#picture").style.backgroundImage = 
 		"url(./image/figures/" + next + ".png)";
-
-
+	
 	function nextFigure(){		
 		var l = field.getLines();
 		if(l>=0){
