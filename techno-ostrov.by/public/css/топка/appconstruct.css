@@ -1,0 +1,60 @@
+/*Buttons*/
+
+/*LINK*/
+.back-link, .new-user-link{
+	text-align: center;
+	width: 100%;
+}
+
+.back-link{
+	margin-top: 50px;
+}
+
+.new-user-link{
+	margin: 25px auto;
+
+}
+
+.new-user-link >a{
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.btn-link{
+	text-indent: 0px;
+	padding: 8px 12px;
+	box-sizing: border-box;
+	border: 1px groove white;
+}
+
+/*SUBMIT*/
+
+
+/*Constructors*/
+
+.row_one_left, .row_one_right, .row_one_center, .row_more_around, .row_more_between{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+
+.row_one_left{
+	justify-content: flex-start;
+}
+
+.row_one_right{
+	justify-content: flex-end;
+}
+
+.row_one_center{
+	justify-content: center;
+}
+
+.row_more_around{
+	justify-content: space-around;
+}
+
+.row_more_between{
+	justify-content: space-between;
+}
