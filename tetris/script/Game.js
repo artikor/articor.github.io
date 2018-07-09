@@ -66,9 +66,8 @@
 			if(l>0){
 				$("#lines").innerHTML = lines;
 				var newLevel = Math.floor(lines/5+1);
-				if(newLevel>level && speed>260) {
+				if(newLevel>level && speed>220) {
 					speed = speed - 30;
-					console.log(speed);
 				}
 				level = newLevel;
 				$("#level").innerHTML = level;
@@ -96,10 +95,13 @@
 		timerId = setTimeout(function tick() {
 			if(game) {
 				nextFigure();
+				bstart.setAttribute('disabled', true);
 				timerId = setTimeout(tick, speed);
 			}
-			else 
+			else {
 				clearInterval(timerId);
+				game = false;
+			}
 		}, speed);
 	});
 

@@ -45,6 +45,7 @@ function Field(){
 
 		this.figure.show();		
 		if(!this.emptyInBox()){
+			bstart.disabled = false;
 			alert("Игра окончена!");
 			return false;
 		}
